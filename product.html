@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <h1>Products</h1>
+    <select id="filterCategory" onchange="filterProducts()">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="fashion">Fashion</option>
+    </select>
+    <select id="sortCriteria" onchange="sortProducts()">
+        <option value="price">Sort by Price</option>
+        <option value="rating">Sort by Rating</option>
+    </select>
+
+    <div id="productList">
+        <div class="product" data-category="electronics" data-price="100" data-rating="4">
+            <h2>Phone</h2>
+            <p>Price: $100, Rating: 4</p>
+        </div>
+        <div class="product" data-category="fashion" data-price="50" data-rating="5">
+            <h2>Shirt</h2>
+            <p>Price: $50, Rating: 5</p>
+        </div>
+        <!-- Add more products as needed -->
+    </div>
+
+    <script src="product.js"></script>
+</body>
+</html>
